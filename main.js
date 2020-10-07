@@ -11,7 +11,7 @@ function getEvenNums (arr) {
   })
 }
 
-console.log(getEvenNums([1,2,3,4,5,6,7,8]))
+// console.log(getEvenNums([1,2,3,4,5,6,7,8]))
 
 // const getOddNums = (arr) => { 
 //   return arr.filter((el) => {
@@ -25,7 +25,7 @@ const getOddNums = (arr) => {
   return arr.filter((el) => (el%2===1))
 }
 
-console.log(getOddNums([1,2,3,4,5,6,7,8]))
+// console.log(getOddNums([1,2,3,4,5,6,7,8]))
 
 //Exercise #2
 // Write a function using .filter(), that takes in an array
@@ -36,7 +36,7 @@ function getDivisibleBySix (arr) {
   return arr.filter((el) => el%6===0)
 }
 
-console.log(getDivisibleBySix([11,12,18,22,24,29,32,36]));
+// console.log(getDivisibleBySix([11,12,18,22,24,29,32,36]));
 
 //Exercise #3
 // using reduce, add up all numbers in an array
@@ -48,7 +48,7 @@ function addNums (arr) {
   })
 }
 
-console.log(addNums([1,2,3]));
+// console.log(addNums([1,2,3]));
 
 //Exercise #4
 //Using Reduce, multiply all numbers in a given array
@@ -60,7 +60,7 @@ function multiplyNums(arr){
   })
 }
 
-console.log(multiplyNums([1,2,3,4,5]));
+// console.log(multiplyNums([1,2,3,4,5]));
 
 //Exercise #5
 //using reduce, power up all numbers in a given array
@@ -72,7 +72,7 @@ function powerNums (arr) {
   })
 }
 
-console.log(powerNums([3,2,3]));
+// console.log(powerNums([3,2,3]));
 
 //Exercise #6
 //using the .filter(), filter out the Full Stack residents 
@@ -93,7 +93,7 @@ let users = [{ firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Resid
     })
   }
 
-  console.log(getFSResidents(users));
+  // console.log(getFSResidents(users));
 
 //Bonus
 //Using Reduce
@@ -102,9 +102,10 @@ let users = [{ firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Resid
 let people =[{name: 'Josh', age: 24}, {name: 'Meghan', age: 34}, {name: 'Samantha', age: 20}]
 
 function addAge (arr) {
-  return arr.reduce(function(acc,curVal){
-    return acc + curVal.age
-  },0)
+  // return arr.reduce(function(acc,curVal){
+  //   return acc + curVal.age
+  // },0)
+  return arr.reduce((acc,curVal)=> {return acc + curVal.age}, 0);
 }
 
 console.log(addAge(people))

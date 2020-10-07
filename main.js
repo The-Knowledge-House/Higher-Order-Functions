@@ -98,3 +98,6 @@ console.log(residents);
 //add up all the ages in the array of objects
 // the ages in the array of objects below should equate to 78
 [{name: 'Josh', age: 24}, {name: 'Meghan', age: 34}, {name: 'Samantha', age: 20}]
+
+const sumAge = (array) =>
+  array.reduce((acc, cur) => acc + cur.age, 0);

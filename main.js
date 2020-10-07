@@ -3,14 +3,20 @@
 // even numbers of an array
 // Now write a function that returns only the odds
 
+const returnOdd = (arr) => {
+  let odd = arr.filter(num => {
+    return num % 2 === 1;
+  })
+  return odd;
+}
 const returnEven = (arr) => {
   let even = arr.filter(num => {
-    return num % 2 === 1;
+    return num % 2 === 0;
   })
   return even;
 }
-
-returnEven([1, 2, 3, 4, 5, 6, 7]);
+returnOdd([1, 2, 3, 4, 5, 6, 7, 8])
+returnEven([1, 2, 3, 4, 5, 6, 7, 8])
 
 //Exercise #2
 // Write a function using .filter(), that takes in an array
